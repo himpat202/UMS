@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="name" class="text-dark">Name</label>
+           <!-- <input type="hidden" name="id" value="">-->
+            <input type="text" class="w3-input w3-border w3-hover-red" name="name" value="" placeholder="rahul gupta" required>
+            
+        </div>
+        
+       <div class="form-group">
+           <label for="Email" class="text-dark">Email</label>
+           <input type="text"  class="w3-input w3-border w3-hover-blue" name="email" value="" placeholder="example@gmail.com" >
+           
+       </div>
+      <!-- <label for="gender" class="text-light">Gender</label>
+       <div class="radio-inline">
+        
+           <input type="radio" name="gender" value="Male">
+           <label for="gender" class="text-light" >Male</label>
+          
+           <input type="radio" name="gender" value="Female">
+           <label for="gender" class="text-light" >Female</label>
+     
+       </div>-->
+
+      <label for="Status" class="text-dark">Done</label>
+       <div class="radio-inline">
+        
+           <input type="radio" name="status" value="Yes">
+           <label for="status" class="text-dark radio-label" >Yes</label>
+       
+       
+           <input type="radio" name="status" value="No">
+           <label for="status" class="text-dark radio-label" >No</label>
+        
+       </div>
+       <div class="form-group">
+        <label for="Address" class="text-dark">Location</label>
+        <input type="text" class="w3-input w3-border w3-hover-orange" name="address" value="" placeholder="landmark" required>
+        
+    </div>
+    <div class="form-group">
+        <label for="City" class="text-dark">City</label>
+        <input type="text" name="cname" class="w3-input w3-border w3-hover-orange" value=""  required>
+        
+    </div>
+       <div class="form-group">
+        <label for="Number" class="text-dark ">Ph Number</label>
+        <input type="number" class="pn w3-input w3-border w3-hover-tomato" name="phnumber" value=""  required>
+        
+    </div>
+    <div class="form-group">
+        <label for="Class" class="text-dark ">Class</label>
+        <input type="text" class="pn w3-input w3-border w3-hover-violet" name="cl" value=""  placeholder="A/B/C">
+        
+    </div>
+       <div class="form-group">
+           <button type="submit" class="btn text-dark  update">Save</button>
+       </div>
+       
+   </form>

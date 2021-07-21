@@ -29,4 +29,7 @@ app.use('/img',express.static(path.resolve(__dirname,"assets/img")))
 app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
 
 app.use('/',require('./server/routers/router'))
-app.listen(8000,()=>{console.log(`Server is running on http://localhost:${PORT}`)});
+//app.listen(8000,()=>{console.log(`Server is running on http://localhost:${PORT}`)});
+app.listen(process.env.PORT || 8000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});

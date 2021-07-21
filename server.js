@@ -29,4 +29,4 @@ app.use('/img',express.static(path.resolve(__dirname,"assets/img")))
 app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
 
 app.use('/',require('./server/routers/router'))
-app.listen(3000,()=>{console.log(`Server is running on http://localhost:${PORT}`)});
+app.listen(8000,()=>{console.log(`Server is running on http://localhost:${PORT}`)});

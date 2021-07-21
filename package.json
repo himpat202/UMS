@@ -5,11 +5,9 @@
   "description": "crud application with express and mongodb",
   "main": "server.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "build": "npm-scripts build"
+    "start": "node server.js"
+    
   },
   "keywords": [
     "crud"

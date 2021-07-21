@@ -33,6 +33,6 @@ app.use('/',require('./server/routers/router'))
 //app.listen(process.env.PORT || 8000, function(){
   //console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 //});
-server.listen(PORT, function () {
+app.listen(PORT, function () {
   console.log('Express server listening on %d, in %s mode', PORT, app.get('env'));
 });

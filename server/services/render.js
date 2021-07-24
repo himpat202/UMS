@@ -3,7 +3,8 @@ const axios = require('axios');
 
 exports.homeRoutes = (req,res) => {
     // make a get requests
-    axios.get('/api/users')
+    var fullUrl = req.protocol + '://' + req.get('host') ;
+    axios.get(fullUrl+'/api/users')
    .then(function(response){
        // console.log(response.data)
         res.render('index',{users:response.data});
@@ -19,7 +20,8 @@ exports.add_user = (req,res) => {
 
 
 exports.update_user = (req, res) =>{
-    axios.get('/api/users', { params : { id : req.query.id }})
+    var fullUrl = req.protocol + '://' + req.get('host') ;
+    axios.get(fullUrl+'/api/users', { params : { id : req.query.id }})
         .then(function(userdata){
             res.render("update_user", { user : userdata.data})
         })
